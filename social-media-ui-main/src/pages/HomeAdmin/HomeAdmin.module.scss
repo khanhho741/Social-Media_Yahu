@@ -1,0 +1,209 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+
+// >= 1920px
+.sidebar {
+    background-color: var(--primary);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: var(--nav-wide-width);
+    height: 100vh;
+    border-right: 1px solid #ccc;
+    -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    padding: 8px 12px 20px;
+    .logo {
+        padding: 20px 12px 8px;
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        border-bottom: 1px solid #ccc;
+        span {
+            font-size: 24px;
+        }
+    }
+    .logo-text {
+        font-size: 28px !important;
+    }
+    user-select: none;
+}
+
+.items-container {
+    flex-grow: 1;
+}
+
+@media (min-width: 1264px) and (max-width: 1919px) {
+    .sidebar {
+        width: var(--nav-medium-width);
+    }
+}
+// >= 1920px
+.sidebar {
+    background-color: var(--primary);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: var(--nav-wide-width);
+    height: 100vh;
+    border-right: 1px solid #ccc;
+    -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    padding: 8px 12px 20px;
+    .logo {
+        padding: 20px 12px 8px;
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        span {
+            font-size: 24px;
+        }
+        
+    }
+    
+    user-select: none;
+}
+
+.items-container {
+    flex-grow: 1;
+}
+.dashboard-header {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 8rem;
+    .header-item {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 25px;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 4px 1px 10px 4px rgba(0, 0, 0, 0.3);
+        .header-title {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            gap: 1rem;
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+    }
+    .header-count {
+        font-size: 22px;
+        margin-left: 2px;
+    }
+}
+
+.dashboard-chart {
+    margin-top: 55px;
+    border-radius: 8px;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 4px 1px 10px 4px rgba(0, 0, 0, 0.3);
+}
+.content {
+    flex: 1;
+    width: 100%;
+    padding: 20px 100px;
+
+    table {
+        width: 100%;
+        margin-top: 40px;
+        //border-collapse: collapse;
+        overflow: hidden;
+        border-radius: 4px;
+        box-shadow: 4px 1px 10px 4px rgba(0, 0, 0, 0.3);
+
+        .odd-row,
+        .even-row {
+            color: rgb(105, 105, 105);
+            &:hover {
+                color: #000;
+            }
+        }
+        .odd-row {
+            background-color: #f2f2f2;
+        }
+        tr {
+            border: none;
+        }
+        tbody {
+            border: none;
+            overflow-y: scroll;
+        }
+        td {
+            padding: 20px;
+            font-size: 13px;
+        }
+        th {
+            background-color: var(--primary);
+            color: #fff;
+            padding: 20px;
+        }
+        
+    }
+}
+.status-enabled {
+    background-color: #28a745; /* Màu xanh */
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+}
+
+.status-disabled {
+    background-color: #dc3545; /* Màu đỏ */
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+}
+
+select {
+    width: 120px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+.panigation {
+    padding: 5px 10px;
+    margin-top: 10px;
+    user-select: none;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    .prev-btn,
+    .next-btn {
+        cursor: pointer;
+        &:not(.disabled):hover {
+            text-decoration: underline;
+            color: var(--primary);
+        }
+    }
+    .disabled {
+        cursor: not-allowed;
+        color: #b3b3b3;
+    }
+}
+
+@media (min-width: 1264px) and (max-width: 1919px) {
+    .sidebar {
+        width: var(--nav-medium-width);
+    }
+}
+

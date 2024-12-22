@@ -1,0 +1,38 @@
+.container {
+    cursor: pointer;
+    &:hover {
+        
+        .sun-line {
+            background-color: white;
+        }
+        .icon {
+            .moon-icon {
+                transform: scale(1.1);
+                fill: black;
+            }
+            .sun-icon {
+                transform: scale(1.1);
+                fill: white;
+            }
+        }
+    }
+}
+.wrapper {
+    .moon-line {
+        background-color: black;
+    }
+    .sun-line {
+        background-color: whie;
+    }
+    .icon {
+        margin-left: 16px;
+        .moon-icon {
+            fill: black;
+            transition: all 0.3s;
+        }
+        .sun-icon {
+            fill: white;
+            transition: all 0.3s;
+        }
+    }
+}

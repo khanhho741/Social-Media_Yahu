@@ -1,0 +1,101 @@
+.search-result {
+    width: 288px;
+}
+
+.search {
+    width: 420px;
+    position: relative;
+    overflow: hidden;
+    height: 46px;
+    display: flex;
+    background-color: rgba(22, 24, 35, 0.06);
+    border-radius: 13px;
+    padding-left: 16px;
+    border: 1.5px solid transparent;
+    input {
+        flex: 1;
+        height: 100%;
+        font-size: 1.5rem;
+        caret-color: red;
+        background-color: transparent;
+    }
+    input:not(:placeholder-shown)~.search-btn {
+        color: rgba(22, 24, 35, 0.75);
+    }
+    .clear {
+        color: rgba(22, 24, 35, 0.34);
+        position: absolute;
+        cursor: default;
+        right: 65px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    span {
+        width: 1px;
+        height: 28px;
+        margin: 9px 0;
+        background-color: rgba(22, 24, 35, 0.12);
+    }
+    .search-btn {
+        width: 50px;
+        height: 100%;
+        font-size: 1.8rem;
+        color: rgba(22, 24, 35, 0.34);
+        &:hover {
+            background-color: rgba(22, 24, 35, 0.03);
+        }
+        &:active {
+            background-color: rgba(22, 24, 35, 0.06);
+        }
+    }
+    &:focus-within {
+        border-color: rgba(22, 24, 35, 0.2);
+    }
+}
+
+.theme-search-dark {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    input {
+        color: #fff;
+    }
+    input:not(:placeholder-shown)~.search-btn {
+        color: rgba(255, 255, 255, 1) !important;
+    }
+    input:not(:placeholder-shown)~.clear {
+        color: rgba(255, 255, 255, 0.5) !important;
+    }
+    span {
+        background-color: rgba(255, 255, 255, 0.5) !important;
+    }
+    .clear,
+    .loading {
+        color: rgba(255, 255, 255, 0.34);
+        background-color: transparent;
+    }
+    .search-btn {
+        background-color: transparent;
+        color: rgba(255, 255, 255, 0.5) !important;
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+        &:active {
+            background-color: rgba(22, 24, 35, 0.06);
+        }
+    }
+    &:focus-within {
+        border-color: var(--primary) !important;
+    }
+}
+
+.result-notify {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat {
+    width: 100%;
+    border-radius: 10px;
+    height: 36px;
+    margin-top: 5px;
+}

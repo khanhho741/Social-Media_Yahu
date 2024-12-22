@@ -1,0 +1,98 @@
+.login {
+    height: 100vh;
+    background: url('../../assets/images/logo/bg-yahu.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    .card {
+      width: 20%; /* Điều chỉnh lại kích thước của card */
+      border-radius: 10px;
+      overflow: hidden;
+      display: flex;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+      .right {
+        width: 100%; /* Giữ nguyên phần này để phần phải chiếm toàn bộ */
+        padding: 40px 60px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+  
+        img {
+          width: 150px;
+          margin: 0 auto 20px;
+        }
+  
+        .title {
+          font-size: 28px;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+  
+        .slowgan {
+          font-style: italic;
+          font-size: 14px;
+          color: #777;
+          margin-bottom: 20px;
+        }
+  
+        form {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+  
+          input {
+            border: none;
+            outline: none;
+            font-size: 16px;
+            padding: 10px;
+            border-bottom: 2px solid #ddd;
+            transition: 0.3s;
+  
+            &:focus {
+              border-bottom: 2px solid #2196f3;
+            }
+          }
+  
+          button {
+            margin-top: 10px;
+            padding: 10px;
+            border: none;
+            background-color: #2196f3;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+  
+            &:hover {
+              background-color: #176eb7;
+            }
+          }
+        }
+  
+        .align-left {
+          margin-top: 10px;
+          text-align: left;
+          font-size: 14px;
+          color: #2196f3;
+          cursor: pointer;
+  
+          .register-now {
+            color: #176eb7;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s;
+  
+            &:hover {
+              color: #2196f3;
+            }
+          }
+        }
+      }
+    }
+  }
+  

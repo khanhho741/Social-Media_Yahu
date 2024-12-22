@@ -1,0 +1,29 @@
+.wrapper-result {
+    display: flex;
+    align-items: center;
+    padding: 6px 10px;
+    cursor: pointer;
+    &:hover {
+        background: rgba(0, 0, 0, 0.073);
+    }
+}
+
+.avatar-account {
+    width: 40px;
+    height: 40px;
+}
+
+.info-account {
+    flex: 1;
+    margin-left: 12px;
+}
+
+.name-account {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.username-account {
+    font-size: 15px;
+    color: rgba(22, 24, 35, 0.5);
+}

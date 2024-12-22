@@ -1,0 +1,19 @@
+.message-page {
+    background: url('../../assets/images/logo/bg-yahu.png') no-repeat center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    .wrapper {
+        max-width: 100%;
+        margin: auto;
+        background-color: #fff;
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        padding: 20px;
+        display: flex;
+        padding-left: 0;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+}

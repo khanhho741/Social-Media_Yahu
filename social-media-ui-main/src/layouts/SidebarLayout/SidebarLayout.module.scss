@@ -1,0 +1,10 @@
+.sidebar-layout {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.content {
+    flex: 1;
+    width: 100%;
+}

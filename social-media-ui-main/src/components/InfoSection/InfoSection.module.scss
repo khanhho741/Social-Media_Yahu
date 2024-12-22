@@ -1,0 +1,22 @@
+.info-container {
+    width: 300px;
+    height: 56px;
+    display: flex;
+    .info-image {
+        min-width: 50px;
+        min-height: 50px;
+    }
+    .info-content {
+        margin-left: 10px;
+        margin-top: 5px;
+        font-size: 14px;
+        .info-username {
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .info-description {
+            opacity: 0.5;
+            font-size: 15px;
+        }
+    }
+}

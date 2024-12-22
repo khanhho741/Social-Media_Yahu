@@ -1,0 +1,126 @@
+.container {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1aee;
+    padding: 20px;
+    overflow: hidden;
+    user-select: none;
+    .close-btn {
+        color: white;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #525252;
+        &:hover {
+            background-color: #000;
+        }
+    }
+}
+.story {
+    position: relative;
+    height: 100%;
+    display: flex;
+    .story-img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: auto 0;
+    }
+}
+
+.story-header {
+    color: white;
+    padding: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    .header-content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.story-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 100;
+    .story-username {
+        font-size: 14px;
+    }
+    .story-time {
+        opacity: 0.6;
+        font-size: 12px;
+    }
+}
+
+.story-action {
+    display: flex;
+    align-items: center;
+    .icon {
+        font-size: 30px;
+        cursor: pointer;
+    }
+}
+
+.swiper {
+    height: 100%;
+    width: calc(100vh / 1.7);
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.swiper-slide {
+    border-radius: 8px;
+    background-color: #858585;
+}
+
+.swiper-custom-next,
+.swiper-custom-prev {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    background-color: #525252;
+    transition: all 0.3s;
+    &:hover {
+        background-color: gray;
+    }
+}
+.swiper-custom-prev {
+    left: 10vw;
+    &:hover {
+        transform: translateX(-4px);
+    }
+}
+.swiper-custom-next {
+    right: 10vw;
+    &:hover {
+        transform: translateX(4px);
+    }
+}
+
+.swiper-button-disabled {
+    display: none;
+}

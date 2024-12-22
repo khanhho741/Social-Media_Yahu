@@ -1,0 +1,40 @@
+.story {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.floating-create-btn {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    z-index: 1000;
+
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    svg {
+        transition: transform 0.3s ease;
+    }
+
+    &:hover svg {
+        transform: rotate(90deg);
+    }
+}

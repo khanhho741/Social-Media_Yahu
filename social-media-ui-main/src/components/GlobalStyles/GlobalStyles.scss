@@ -1,0 +1,107 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;700&family=Merriweather:wght@900&display=swap');
+:root {
+    --primary: #2874d7;
+    --text-color: #333;
+    //Default layout
+    --default-layout-header-height: 64px;
+    --default-layout-width: 1140px;
+
+    --nav-medium-width: 250px;
+    --nav-wide-width: 360px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+    //color: var(--primary);
+}
+
+input,
+button,
+[tabindex] {
+    border: none;
+    outline: none;
+}
+
+a[href] {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+// for dark mode
+.theme-dark {
+    background-color: #181818;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.active {
+    background: #fff;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2874d7;
+    border-radius: 10px;
+    &:hover {
+        background: #1c74e7;
+    }
+}
+
+//for light mode
+.theme-light {
+    background-color: #fff !important;
+    color: black;
+    transition: all 0.3s;
+}
+
+.bg-content-light {
+    background-color: #fafafa;
+}
+
+.username-hover {
+    :first-child {
+        &:hover {
+            color: var(--primary);
+            cursor: pointer;
+        }
+    }
+}
+.close-btn {
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #525252;
+    &:hover {
+        background-color: #000;
+    }
+}

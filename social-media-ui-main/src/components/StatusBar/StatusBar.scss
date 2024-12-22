@@ -1,0 +1,63 @@
+.statusBar__container {
+    display: flex;
+    height: 120px;
+    width: 700px;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #dbdddb;
+    padding: 15px 0;
+    border-radius: 8px;
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+        //height: 20px;
+        display: none;
+    }
+    .status {
+        align-items: center;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        width: 64px;
+        margin-left: 16px;
+        .statusBar__status {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            overflow: hidden;
+            object-fit: cover;
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+        .statusBar__text {
+            font-size: 14px;
+            max-width: 60px;
+            overflow-x: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            opacity: 0.5;
+        }
+    }
+}
+
+.circle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //border-radius: 50%;
+    padding: 4px;
+    background: linear-gradient(#fff 0 0) padding-box, linear-gradient(45deg, #9c20aa, #fb3570) border-box;
+    border: 2px solid transparent;
+    border-radius: 50%;
+}
+
+.statusBar__dark {
+    border-color: rgba(255, 255, 255, 0.5);
+    background-color: #181818 !important;
+    .circle {
+        background: linear-gradient(#3a3a3a 0 0) padding-box, linear-gradient(45deg, #9c20aa, #fb3570) border-box !important;
+    }
+}

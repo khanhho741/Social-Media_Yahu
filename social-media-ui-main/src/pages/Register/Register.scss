@@ -1,0 +1,93 @@
+.register {
+    height: 100vh;
+    color: #000;
+    background-image: url(../../assets/images/logo/bg-yahu.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .card {
+        overflow: hidden;
+        width: 20%;
+        border-radius: 10px;
+        background-color: #fff;
+        min-height: 550px;
+
+        .left {
+            width: 100%;
+            background-color: #fff;
+            padding: 40px 60px;
+            text-align: center;
+
+            img {
+                display: block;
+                width: 150px;
+                margin-inline: auto;
+            }
+
+            .slowgan {
+                font-style: italic;
+                margin-top: 15px;
+                margin-bottom: 20px;
+                font-size: 14px;
+                color: #777;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                input {
+                    background-color: transparent;
+                    color: #000;
+                    border: none;
+                    outline: none;
+                    font-size: 14px;
+                    padding: 10px 10px 5px;
+                    border-bottom: 1px solid lightgrey;
+                }
+
+                button {
+                    display: block;
+                    border: none;
+                    padding: 10px;
+                    margin-bottom: 10px;
+                    margin-top: 10px;
+                    width: 100%;
+                    margin-left: auto;
+                    background-color: var(--primary);
+                    color: #fff;
+                    transition: 0.3s;
+                    font-size: 16px;
+                    font-weight: 700;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: #fff;
+                        background-color: #2196f3;
+                    }
+                }
+            }
+
+            .align-left {
+                text-align: start;
+                margin-top: 10px;
+                margin-right: auto;
+                margin-left: 0;
+                color: #2196f3;
+                font-size: 14px;
+                font-weight: 700;
+
+                .register-now {
+                    text-decoration: none;
+                    color: #176eb7;
+
+                    &:hover {
+                        color: #2196f3;
+                    }
+                }
+            }
+        }
+    }
+}

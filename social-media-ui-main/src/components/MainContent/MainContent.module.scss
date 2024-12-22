@@ -1,0 +1,86 @@
+.main-container {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    .main-wrapper {
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+    }
+}
+.right-section {
+    position: fixed;
+}
+.post-content {
+    margin-right: 3rem;
+}
+
+@media (max-width: 1000px) {
+    .right-section {
+        display: none;
+    }
+}
+
+
+.sidebar {
+    position: fixed;
+    left: 20rem;
+    top: 8rem;
+    width: 30rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    
+    // Light mode styles
+    background: white;
+    border: 1px solid #e3e3e3;
+
+    // Dark mode styles
+    &.dark {
+        background: #181818;
+        border-color: #e3e3e3;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+
+    // Light mode styles
+    &:hover {
+        background-color: #f5f5f5;
+    }
+
+    // Dark mode styles
+    .dark & {
+        &:hover {
+            background-color: #374151;
+        }
+    }
+}
+
+.nav-icon {
+    font-size: 1.5rem;
+    
+    // Dark mode styles
+    .dark & {
+        color: #e5e7eb;
+    }
+}
+
+.nav-label {
+    font-weight: 500;
+    color: #4b5563;
+
+    // Dark mode styles
+    .dark & {
+        color: #e5e7eb;
+    }
+}

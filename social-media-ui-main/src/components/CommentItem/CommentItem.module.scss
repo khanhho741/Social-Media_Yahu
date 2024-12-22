@@ -1,0 +1,52 @@
+.comment-container {
+    display: flex;
+}
+.comment-item {
+    display: flex;
+    gap: 1rem;
+    padding: 4px 10px;
+    &:hover {
+        .action {
+            :nth-child(3) {
+                display: flex;
+            }
+        }
+    }
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    .info {
+        display: flex;
+        flex-direction: column;
+        // background-color: #3a3b3c;
+        background-color: #f0f2f5;
+        color: black;
+        border-radius: 0 1rem 1rem 1rem;
+        padding: 5px 10px;
+        width: fit-content;
+        :nth-child(2) {
+            font-weight: 100;
+        }
+    }
+    .action {
+        user-select: none;
+        padding: 4px 10px 0;
+        display: flex;
+        align-items: flex-end;
+        gap: 1rem;
+        font-size: 1.4rem;
+        color: #65676b;
+        :nth-child(1),
+        :nth-child(2) {
+            cursor: pointer;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        :nth-child(3) {
+            display: none;
+            font-weight: 100;
+        }
+    }
+}

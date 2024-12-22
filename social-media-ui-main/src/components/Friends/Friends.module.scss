@@ -1,0 +1,32 @@
+.friend-info {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+}
+
+.friends__container {
+    width: 300px;
+    min-height: 300px;
+    margin-top: 20px;
+    .friends__header {
+        font-weight: bold;
+        color: #8e8e8e;
+        padding: 8px 16px;
+    }
+    .friends__body {
+        .friend {
+            padding: 0 16px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.6;
+            }
+
+            .friend__username {
+                font-size: 14px;
+                opacity: 0.6;
+            }
+        }
+    }
+}
